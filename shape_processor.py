@@ -237,6 +237,13 @@ def convert_to_coordinates(
     return np.stack((lat_points, lon_points), axis=1)
 
 
+def line_trace_to_coordinates(
+    points: np.ndarray, image_dimensions: tuple[int, int], bbox: list[float]
+) -> np.ndarray:
+    simplified_points = rdp_simplify(points)
+    return convert_to_coordinates(simplified_points, image_dimensions, bbox)
+
+
 def image_to_coordinates(image_filename: str, bbox: list[float]) -> np.ndarray:
     im = cv.imread(image_filename)
     assert im is not None, "file could not be read, check with os.path.exists()"
