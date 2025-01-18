@@ -69,3 +69,17 @@ def construct_node_coordinates(roads: list) -> dict[int, tuple[float, float]]:
             print("Number of nodes:", len(nodes))
             print("Number of coordinates:", len(coordinates))
     return node_coordinates
+
+
+def get_closest_node(
+    coordinates: tuple[float, float],
+    nodes: dict[int, tuple[float, float]],
+) -> int:
+    """
+    Get the closest node to the given coordinates
+    """
+    best_node = min(
+        list(nodes.keys()),
+        key=lambda id: euclidean(nodes[id], coordinates),
+    )
+    return best_node

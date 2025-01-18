@@ -4,9 +4,94 @@
 #
 #    pip-compile
 #
+beautifulsoup4==4.12.3
+    # via osmpythontools
+branca==0.8.1
+    # via folium
+certifi==2024.12.14
+    # via requests
+charset-normalizer==3.4.1
+    # via requests
+contourpy==1.3.1
+    # via matplotlib
+cycler==0.12.1
+    # via matplotlib
+folium==0.19.2
+    # via -r requirements.in
+fonttools==4.55.3
+    # via matplotlib
+geojson==3.2.0
+    # via osmpythontools
+gpxpy==1.6.2
+    # via -r requirements.in
+idna==3.10
+    # via requests
+jinja2==3.1.5
+    # via
+    #   branca
+    #   folium
+kiwisolver==1.4.8
+    # via matplotlib
+lxml==5.3.0
+    # via osmpythontools
+markupsafe==3.0.2
+    # via jinja2
+matplotlib==3.10.0
+    # via osmpythontools
 numpy==2.2.1
     # via
     #   -r requirements.in
+    #   contourpy
+    #   folium
+    #   matplotlib
+    #   opencv-contrib-python
+    #   opencv-python
+    #   osmpythontools
+    #   pandas
+    #   rdp
     #   scipy
+    #   xarray
+opencv-contrib-python==4.10.0.84
+    # via -r requirements.in
+opencv-python==4.10.0.84
+    # via -r requirements.in
+osmpythontools==0.3.5
+    # via -r requirements.in
+packaging==24.2
+    # via
+    #   matplotlib
+    #   xarray
+pandas==2.2.3
+    # via
+    #   osmpythontools
+    #   xarray
+pillow==11.1.0
+    # via matplotlib
+pyparsing==3.2.1
+    # via matplotlib
+python-dateutil==2.9.0.post0
+    # via
+    #   matplotlib
+    #   pandas
+pytz==2024.2
+    # via pandas
+rdp==0.8
+    # via -r requirements.in
+requests==2.32.3
+    # via folium
 scipy==1.15.1
     # via -r requirements.in
+six==1.17.0
+    # via python-dateutil
+soupsieve==2.6
+    # via beautifulsoup4
+tzdata==2024.2
+    # via pandas
+ujson==5.10.0
+    # via osmpythontools
+urllib3==2.3.0
+    # via requests
+xarray==2025.1.1
+    # via osmpythontools
+xyzservices==2024.9.0
+    # via folium
